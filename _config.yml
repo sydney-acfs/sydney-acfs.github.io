@@ -1,0 +1,19 @@
+title:             Australia Cuba Friendship Society Sydney
+email:             sydneyacfs@gmail.com
+description:       short description...
+author:            ACFS Sydney
+baseurl:           "/"
+url:               "http://sydney-acfs.github.io"
+
+# Social Profiles
+# twitter_username:  SBootstrap
+# github_username:   BlackrockDigital
+facebook_username: groups/ACFS.Sydney/
+
+# Build settings
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
