@@ -19,7 +19,7 @@
           {% endif %}
           {% if site.facebook_username %}
           <li class="list-inline-item">
-            <a href="https://www.facebook.com/{{ site.facebook_username }}">
+            <a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -37,6 +37,24 @@
             </a>
           </li>
           {% endif %}
+          {% if site.email %}
+          <li class="list-inline-item">
+            <a href="mailto:{{ site.email }}" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          <li class="list-inline-item">
+            <a href="http://www.cubabrigade.org.au/" target="blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-plane fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
         </ul>
         <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
       </div>
